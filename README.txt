@@ -6,7 +6,8 @@ This reporistory contains:
 
 utils.ipynb - A Notebook containing the challenge dataset and test functions for the BiLSTM and BERT models
 
-main.ipynb - A Notebook where the test functions of both models can be run and automatically create a text file with the data instances and their predicted labels
+main.ipynb - A Notebook to print out the failure rate of each test, print out the failed samples and create a text file 
+with the data instances and their predicted labels
 
 data_results - a readable TSV file containing all the instances and results of the BiLSTM and BERT models
 
