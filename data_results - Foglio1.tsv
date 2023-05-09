@@ -1,0 +1,66 @@
+Test No.	Data	Target arg	LSTM	BERT	Actual
+1	Lisa bought a house, which had just been redecorated, from her friend.	from her friend	ARG1	ARG2	ARG2
+1	Lisa bought a house, which is situated in Beverly Hills, from her friend.	from her friend	ARG2	ARG2	ARG2
+1	Lisa bought a house, the one right by the pink house, from her friend.	from her friend	ARG2	ARG2	ARG2
+1	Lisa bought a house, next door to where Mohamed lives, from her friend.	from her friend	ARG2	ARG2	ARG2
+1	Lisa bought a house, which she has never done before, from her friend.	from her friend	ARG2	ARG2	ARG2
+1	Lisa bought a house, along with other things, from her friend.	from her friend	ARG2	ARG2	ARG2
+1	Lisa bought a house, far up in the mountains, from her friend.	from her friend	ARG2	ARG2	ARG2
+1	Lisa bought a house, after her divorce, from her friend.	from her friend	ARG1	ARG2	ARG2
+1	Lisa bought a house, which I used to own, from her friend.	from her friend	ARG2	ARG2	ARG2
+1	Lisa bought a house, known as Villa Rosa, from her friend.	from her friend	ARG2	ARG2	ARG2
+					
+2	Lisa bought a house, which had just been redecorated, last month.	last month	ARG1	ARGM-TMP	ARGM-TMP
+2	Lisa bought a house, which is situated in Beverly Hills, last month.	last month	ARGM-TMP	ARGM-TMP	ARGM-TMP
+2	Lisa bought a house, the one right by the pink house, last month.	last month	ARGM-TMP	ARGM-TMP	ARGM-TMP
+2	Lisa bought a house, next door to where Mohamed lives, last month.	last month	ARGM-TMP	ARGM-TMP	ARGM-TMP
+2	Lisa bought a house, which she has never done before, last month.	last month	ARG1	ARGM-TMP	ARGM-TMP
+2	Lisa bought a house, along with other things, last month.	last month	ARGM-TMP	ARGM-TMP	ARGM-TMP
+2	Lisa bought a house, far up in the mountains, last month.	last month	ARGM-TMP	ARGM-TMP	ARGM-TMP
+2	Lisa bought a house, after her divorce, last month.	last month	ARGM-TMP	ARGM-TMP	ARGM-TMP
+2	Lisa bought a house, which I used to own, last month.	last month	ARGM-TMP	ARGM-TMP	ARGM-TMP
+2	Lisa bought a house, known as Villa Rosa, last month.	last month	ARGM-TMP	ARGM-TMP	ARGM-TMP
+					
+3	Kyle gave food to the dog. Kyle gave the dog food.	food	ARG2	ARG1	ARG1
+3	Tom gave flowers to Katie. Tom gave Katie flowers.	flowers	ARG1	ARG1	ARG1
+3	Larsa gave a necklave to her friend. Larsa gave her friend a necklace.	a necklace	ARG1	ARG1	ARG1
+3	Garcelle gave a gift to her son. Garcelle gave her son a gift.	a gift	ARG1	ARG1	ARG1
+3	Ariana gave her notice to her job in advance.Ariana gave her job notice in advance.	her job notice	ARGM-TMP	ARGM-TMP	ARG1
+3	Jocelyn gave a present to herself. Jocelyn gave herself a present.	a present	ARG1	ARG1	ARG1
+3	Andy gave a speech to his guests. Andy gave his guests a speech.	a speech	ARG1	ARG1	ARG1
+3	Jason gave a ring to his mother. Jason gave his mother a ring.	a ring	ARG1	ARG1	ARG1
+3	Yolanda gave a tip to the gardener. Yolanda gave the gardener a tip.	a tip	ARG1	ARG1	ARG1
+3	Kenya gave a raise to her assistant. Kenya gave her assistant a raise.	a run for their money	ARG1	ARG1	ARG1
+					
+4	Nene spilled the champagne. The champagne spilled.	the champagne	ARG1	ARG1	ARG1
+4	Lisa accelerated the Porsche. The Porsche accelerated.	the Porsche	ARG1	ARG1	ARG1
+4	Ken loosened the tie. The tie loosened.	the tie	ARG1	ARG1	ARG1
+4	Raquel returned the envelope. The envelope returned.	the envelope	ARG1	ARG1	ARG1
+4	Brock broke the chair. The chair broke.	the chair	ARG1	ARG1	ARG1
+4	Lauren emptied the bottle. The bottle emptied.	the bottle	ARG1	ARG1	ARG1
+4	James worsened the situation. The situation worsened.	the situation	ARG1	ARG1	ARG1
+4	The captain capsized the boat. The boat capsized.	the boat	ARG0	ARG0	ARG1
+4	Guillermo dampened the mood. The mood dampened.	the mood	ARG1	ARG1	ARG1
+4	Tom flooded the kitchen. The kitchen flooded.	the kitchen	ARG1	ARG1	ARG1
+					
+5	Nene did not spill the champagne.The champagne was not spilled by Nene.	champagne	ARG1	ARG1	ARG1
+5	Lisa did not accelerate the Porsche. The Porsche was not accelerated by Lisa.	Porsche	ARG1	ARG1	ARG1
+5	Ken did not loosen the tie. The tie was not loosened by Ken.	tie	ARG1	ARG1	ARG1
+5	Raquel did not return the envelope. The envelope was not returned by Raquel.	envelope	ARG1	ARG1	ARG1
+5	Brock did not break the chair. The chair was not broken by Brock.	chair	ARG1	ARG1	ARG1
+5	Tom did not flood the kitchen. The kitchen was not flooded by Tom.	champagne	ARG1	ARG1	ARG1
+5	Lauren did not empty the bottle. The bottle was not emptied by Lauren.	Porsche	ARG1	ARG1	ARG1
+5	Guillermo did not dampen the mood. The mood was not dampened by Guillermo.	tie	ARG1	ARG1	ARG1
+5	Alexia did not start the fight. The fight was not started by Alexia. 	envelope	ARG1	ARG1	ARG1
+5	Sheree did not build the house. The house was not built by Sheree.	chair	ARG1	ARG1	ARG1
+					
+6	It was Nene who spilled the champagne.	Nene	ARG0	ARG0	ARG0
+6	It was Lisa who accelerated the Porsche.	Lisa	ARG0	ARG0	ARG0
+6	It was Ken who loosened the tie.	Ken	ARG0	ARG0	ARG0
+6	It was Raquel who returned the envelope.	Raquel	ARG0	ARG0	ARG0
+6	It was Brock who broke the chair.	Brock	ARG0	ARG0	ARG0
+6	It was not Nene who spilled the champagne.	Nene	ARG0	ARG0	ARG0
+6	It was not Lisa who accelerated the Porsche.	Lisa	ARG0	ARG0	ARG0
+6	It was not Ken who loosened the tie.	Ken	ARG0	ARG0	ARG0
+6	It was not me who ate the last pizza.	me	ARG0	ARG0	ARG0
+6	It was not the cat that went missing.	cat	ARG1	ARG1	ARG0
