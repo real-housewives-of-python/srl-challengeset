@@ -11,10 +11,14 @@ with the data instances and their predicted labels
 
 data_results - a readable TSV file containing all the instances and results of the BiLSTM and BERT models
 
+srl_results.txt - a readable text file with the BiLSTM predicted labels for each instance
+
+bert_results.txt - a readable text file with the BERT predicted labels for each instance
+
 Instructions:
 - Upload and open main.ipynb on Google Colab
-- Click on the Folder icon on the left side of the Notebook, click the Mount Drive icon to connect to Google Drive
-- Upload utils.ipynb
+- Click on the Folder icon on the left side of the Notebook, this will open a sidebar. Click the Mount Drive icon to connect to Google Drive
+- Upload utils.ipynb through the sidebar icon labelled 'Upload to session storage'
 - Run all cells on main.ipynb to print out results and create text files containing the data instances and their predicted labels
 
 Requirements:
